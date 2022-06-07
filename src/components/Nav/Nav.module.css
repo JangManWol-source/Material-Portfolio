@@ -14,13 +14,14 @@
 }
 
 .item{
-
+    
     display: flex;
     align-items: center;
     flex: 1;
 }
 .item div{
-    margin: 10px;
+    margin-right: 10px;
+    margin-left: 10px;
 }
 .logo{
     display: flex;
@@ -42,6 +43,10 @@
     background-color: blue;
     color: white;
 }
+.line_wrapper h5{
+    font-weight: 200;
+}
+
 @media screen and (max-width:600px) {
     .item{
         display: none;

@@ -12,8 +12,12 @@ import ai from '../res/drawable/ai.png'
 import aStudio from '../res/drawable/as.png'
 import fr from '../res/drawable/firebase.png'
 import kt from '../res/drawable/kotlin.png'
+import { motion, useViewportScroll, useTransform } from "framer-motion"
+
 import java from '../res/drawable/java.png'
 const Skills = (props) => {
+    const { scrollYProgress } = useViewportScroll()
+  const scale = useTransform(scrollYProgress, [0, 1.5], [0.2, 2]);
     const web = ([{
         id: Math.random().toString(),
         title: 'React.JS',
@@ -98,9 +102,9 @@ const Skills = (props) => {
     },])
 
     return (
-        <div className={classes.skills}>
+        <motion.div style={{scale}} className={classes.skills}>
             <SkillsItem items={web} />
-        </div>
+        </motion.div>
     )
 }
 

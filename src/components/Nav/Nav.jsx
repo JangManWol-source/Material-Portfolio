@@ -7,17 +7,32 @@ const Nav = () => {
     <div className={classes.nav}>
       <div className={classes.logo}>
         <Logo />
-        
+
         <h3>Joe Cristian Jamis</h3>
       </div>
       <div className={classes.item}>
-        <div>Home</div>
-        <div>About</div>
-        <div>Timeline</div> 
+        <div className={classes.line_wrapper}>
+          <div>
+            <h5>Home</h5>
+          </div>
+          <div className={classes.line}></div>
+        </div>
+        <div className={classes.line_wrapper}>
+          <div>
+            <h5>Project</h5>
+          </div>
+          <div className={classes.line}></div>
+        </div>
+        <div className={classes.line_wrapper}>
+          <div>
+            <h5>Contacts</h5>
+          </div>
+          <div className={classes.line}></div>
+        </div>
       </div>
       <div className={classes.button}>
-      
-      <Button variant='contained'>Visit Me</Button>
+
+        <Button variant='contained'>Visit Me</Button>
       </div>
 
     </div>
