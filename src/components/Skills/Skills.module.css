@@ -1,0 +1,12 @@
+.skills{
+    width: 100% auto;
+    height: 100%;
+}
+
+@media screen and (max-width: 600px) {
+    .skills{
+        width: 100% auto;
+        height: fit-content;
+    }
+    
+}

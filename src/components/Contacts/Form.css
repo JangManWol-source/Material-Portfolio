@@ -1,0 +1,58 @@
+.box{
+    display: flex;
+    justify-content: center;
+    height: max-content;
+}
+.box div{
+    margin: 2px;
+    color: white;
+}
+.form{
+    justify-content: center;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+.form1{
+    display: flex;
+    flex-direction: column;
+}
+.contacts{
+    padding: 1rem;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+.info{
+    line-height: 10px;
+    display: flex;
+    align-items: flex-start;
+    flex-direction: column;
+}
+.info-details{
+    display: flex;
+    align-items: center;
+    font-size: 12px;
+}
+.info-details div{
+    margin: 5px;
+}
+.button{
+    display: flex;
+    justify-content: flex-end;
+}
+.img img{
+    width: 20px;
+    height: 20px;
+}
+.contact-details{
+    font-size: 10px;
+    font-weight: normal;
+}
+
+@media screen and (max-width:600px) {
+    .button{
+        justify-content: center;
+    }
+    
+}
