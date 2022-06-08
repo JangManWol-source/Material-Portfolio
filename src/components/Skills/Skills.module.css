@@ -11,6 +11,7 @@
     .skills{
         width: 100% auto;
         height: 100vh;
+        overflow: hidden;
     }
     
 }

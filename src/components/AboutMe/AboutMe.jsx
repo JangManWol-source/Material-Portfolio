@@ -7,43 +7,44 @@ import git from '../res/drawable/git_dark.svg'
 import { Button } from '@mui/material';
 import TypeAnimation from 'react-type-animation';
 import { useInView } from 'react-intersection-observer';
+import { motion } from 'framer-motion';
 const AboutMe = () => {
     const [ref, inView] = useInView({
-        threshold:0.2
+        threshold: 0.2
     })
     return (
         <div className={classes.nav}>
             <Nav />
-            <div className={classes.nav_content}>
-                <div className={classes.details}>
-                    
+            <div className={classes.nav_content} >
+                <motion.div className={classes.details} initial={{ y: 100, opacity: 0 }} transition={{ duration: 1 }} whileInView={{threshold:0.5, y: 0, opacity: 1 }}>
+
                     <div className={classes.hello}>
                         Hello there,
-                        </div>
+                    </div>
                     <div className={classes.name}>I'm Joe Cristian</div>
                     <div className={classes.message} ref={ref}>
-                    {inView && <TypeAnimation cursor={true}
-                        sequence={['', Infinity, "an anspiring full-stack developer."]}   
-                        wrapper='div'/>}
-                        </div>
+                        {inView && <TypeAnimation cursor={true}
+                            sequence={['', Infinity, "an anspiring full-stack developer."]}
+                            wrapper='div' />}
+                    </div>
                     <div className={classes.button}>
                         <Button variant='contained' size='small'>View my projects</Button>
                     </div>
                     <div className={classes.logos}>
                         <div>
-                            <img src={git} alt="" />
+                            <a href="https://github.com/JangManWol-source"><img src={git} alt="" /></a>
                         </div>
                         <div>
-                            <img src={tel} alt="" />
+                            <a href="tel:+639914219787"><img src={tel} alt="" /></a>
                         </div>
                         <div>
-                            <img src={fb} alt="" />
+                            <a href="https://web.facebook.com/joetian.jamis.7/"><img src={fb} alt="" /></a>
                         </div>
                     </div>
-                    </div>
-                </div>
-        
-          
+                </motion.div>
+            </div>
+
+
         </div>
     )
 }
