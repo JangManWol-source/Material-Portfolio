@@ -7,7 +7,7 @@
     background-size: cover;
 }
 .nav_content{
-    height: 100vh;
+    height: 80vh;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -29,7 +29,8 @@
     width: fit-content;
     font-size: 10px;
     margin-top: 10px;
-    background-color: blue;
+    color: #171717;
+    background-color: white;
     margin-bottom: 10px;
 }
 .details{
@@ -54,12 +55,19 @@
         align-items: center;
         display: flex;
         justify-content: center;
+        margin-left: 0;
         margin-bottom: 0;
     }
     .nav{
-        height: fit-content;
+        height: 97vh;
         background-image: none;
         background-color: #171717;
     }
 }
 
+@media screen and (max-width:1200px) {
+    .nav{
+        background-image: none;
+        background-color: #171717;
+    }
+}

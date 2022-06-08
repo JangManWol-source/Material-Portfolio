@@ -55,7 +55,7 @@ const Skills = (props) => {
         title: 'Firebase Database',
         value: 80,
         img: fr,
-        type: 'android'
+        type: 'database'
     },
     {
         id: Math.random().toString(),
@@ -101,6 +101,7 @@ const Skills = (props) => {
 
     return (
         <React.Fragment>
+            
              <motion.div className={classes.skills}>
                 <SkillsItem items={web} />
             </motion.div>

@@ -2,6 +2,7 @@ import React from 'react'
 import classes from './Nav.module.css'
 import Logo from '../Logo/Logo.jsx'
 import Button from '@mui/material/Button';
+import git from '../res/drawable/git_dark.svg'
 const Nav = () => {
   return (
     <div className={classes.nav}>
@@ -31,8 +32,7 @@ const Nav = () => {
         </div>
       </div>
       <div className={classes.button}>
-
-        <Button variant='contained'>Visit Me</Button>
+        <a href='https://github.com/JangManWol-source'> <Button variant='contained'>Visit Me <img src={git}  alt="" /></Button></a>
       </div>
 
     </div>

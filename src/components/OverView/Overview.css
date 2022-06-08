@@ -1,0 +1,42 @@
+.overview{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    height: 28rem;
+    padding-bottom: 1rem;
+    font-size: 10px;
+    line-height: 15px;
+}
+.details{
+    max-width: 20rem;
+    display: flex;
+    align-items: center;
+}
+.details div{
+    margin-right: 10px;
+}
+.details img{
+    width: 20px;
+    height: 20px;
+}
+.overview-card{
+    margin-bottom: 2rem;
+    padding: 1rem;
+    max-width: 40rem;
+    position: absolute;
+}
+.study{
+    max-width: 25rem;
+    height: auto;
+}
+.study img{
+    height: auto;
+    width: 100%;
+}
+.title{
+    text-align: center;
+    font-weight: 600;
+    padding-bottom: 2rem;
+    font-size: 15px;
+}

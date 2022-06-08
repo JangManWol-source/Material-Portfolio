@@ -40,8 +40,17 @@
 .button button{
     flex: 1;
     border-radius: 5px;
-    background-color: blue;
-    color: white;
+    background-color: white;
+    color: #171717;
+}
+.button a{
+    text-decoration: none;
+    color: #171717;
+}
+.button img{
+    width: 20px;
+    height: 20px;
+    margin-left: 5px;
 }
 .line_wrapper h5{
     font-weight: 200;
