@@ -12,7 +12,7 @@ const OverView = () => {
     <div className='overview'>
         <Card className='overview-card'>
             <div className="title">Quick Overview</div>
-            <div className="details"><div><img src={graduate} alt="" /></div><div>I am Computer Science Student at ICCT</div></div>
+            <div className="details"><div><img src={graduate} alt="graduate" /></div><div>I am Computer Science Student at ICCT</div></div>
             <div className="details"><div><img src={award} alt="" /></div><div>I finished senior high school with honor at MaNHS.</div></div>
             <div className="details"><div><img src={code} alt="" /></div><div>I am the developer of our thesis app.</div></div>
             <div className="details"><div><img src={work} alt="" /></div><div>Having part time job and free lancing at Linkedin and another platform to gain experience.</div></div>
