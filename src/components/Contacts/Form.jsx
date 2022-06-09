@@ -24,7 +24,7 @@ const Form = () => {
     },
 ]
     return (
-        <div className='contacts'>
+        <div className='contacts' id='contact'>
            <div className='info'>
                 {data.map((each)=>(
                     <div className='info-details'>

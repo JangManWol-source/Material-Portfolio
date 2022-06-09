@@ -12,12 +12,12 @@ const OverView = () => {
     <div className='overview'>
         <Card className='overview-card'>
             <div className="title">Quick Overview</div>
-            <div className="details"><div><img src={graduate} alt="graduate" /></div><div>I am Computer Science Student at ICCT</div></div>
-            <div className="details"><div><img src={award} alt="award" /></div><div>I finished senior high school with honor at MaNHS.</div></div>
-            <div className="details"><div><img src={code} alt="code" /></div><div>I am the developer of our thesis app.</div></div>
-            <div className="details"><div><img src={work} alt="work" /></div><div>Having part time job and free lancing at Linkedin and another platform to gain experience.</div></div>
-            <div className="details"><div><img src={react} alt="react" /></div><div>I love React.js library.</div></div>
-            <div className='title' style={{textAlign:'left', marginTop:10}}>Recent Study</div>
+            <div className="details"><div><img src={graduate} alt="graduate" /></div><div>I am an ICCT Computer Science student.</div></div>
+            <div className="details"><div><img src={award} alt="award" /></div><div>At MaNHS, I graduated with honors.</div></div>
+            <div className="details"><div><img src={code} alt="code" /></div><div>I am the developer of our thesis android app.</div></div>
+            <div className="details"><div><img src={work} alt="work" /></div><div>Gaining experience by working part-time and freelancing on Linkedin and other platforms.</div></div>
+            <div className="details"><div><img src={react} alt="react" /></div><div>I really like the React.js library.</div></div>
+            <div className='title' style={{textAlign:'left', marginTop:10}}>Recent Research</div>
             <div className='study'><img src={study} alt="" /></div>
         </Card>
     </div>

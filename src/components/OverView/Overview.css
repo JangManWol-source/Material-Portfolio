@@ -24,6 +24,8 @@
     margin-bottom: 2rem;
     padding: 1rem;
     max-width: 40rem;
+    margin-left: 10px;
+    margin-right: 10px;
     position: absolute;
 }
 .study{

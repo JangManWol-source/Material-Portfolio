@@ -2,6 +2,7 @@ import React from 'react'
 import classes from './Nav.module.css'
 import Logo from '../Logo/Logo.jsx'
 import Button from '@mui/material/Button';
+import {Link} from 'react-scroll'
 import git from '../res/drawable/git_dark.svg'
 const Nav = () => {
   return (
@@ -14,19 +15,19 @@ const Nav = () => {
       <div className={classes.item}>
         <div className={classes.line_wrapper}>
           <div>
-            <h5>Home</h5>
+            <Link to='home' spy={true} smooth={true} offset={0} duration={1000}>Home</Link>
           </div>
           <div className={classes.line}></div>
         </div>
         <div className={classes.line_wrapper}>
           <div>
-            <h5>Project</h5>
+            <Link to='skill' spy={true} smooth={true} offset={0} duration={1000}>Skills</Link>
           </div>
           <div className={classes.line}></div>
         </div>
         <div className={classes.line_wrapper}>
           <div>
-            <h5>Contacts</h5>
+            <Link to='contact' spy={true} smooth={true} offset={50} duration={1000}>Contacts</Link>
           </div>
           <div className={classes.line}></div>
         </div>

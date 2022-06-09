@@ -13,7 +13,7 @@ const AboutMe = () => {
         threshold: 0.2
     })
     return (
-        <div className={classes.nav}>
+        <div id='home' className={classes.nav}>
             <Nav />
             <div className={classes.nav_content} >
                 <motion.div className={classes.details} initial={{ y: 100, opacity: 0 }} transition={{ duration: 1 }} whileInView={{threshold:0.5, y: 0, opacity: 1 }}>

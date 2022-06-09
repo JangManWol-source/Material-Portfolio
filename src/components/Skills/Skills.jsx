@@ -102,7 +102,7 @@ const Skills = (props) => {
     return (
         <React.Fragment>
             
-             <motion.div className={classes.skills}>
+             <motion.div id='skill' className={classes.skills}>
                 <SkillsItem items={web} />
             </motion.div>
         </React.Fragment>
