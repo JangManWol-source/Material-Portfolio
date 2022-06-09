@@ -52,8 +52,12 @@
     height: 20px;
     margin-left: 5px;
 }
-.line_wrapper h5{
+.line_wrapper{
+    cursor: pointer;
     font-weight: 200;
+}
+.line_wrapper div:hover{
+    font-weight: 700;
 }
 
 @media screen and (max-width:600px) {

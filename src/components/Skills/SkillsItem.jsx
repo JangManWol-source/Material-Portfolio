@@ -4,6 +4,7 @@ import classes from './SkillsItem.module.css'
 import CountUp from 'react-countup';
 import { useInView } from 'react-intersection-observer';
 import { useState } from 'react';
+import { motion } from 'framer-motion';
 
 const SkillsItem = (props) => {
   const [selected, setSelected] = useState('all')
@@ -38,11 +39,11 @@ return
       <div className={classes.skills_title}>SKILLS</div>
       <div className={classes.skills_holder}>
       <div className={classes.skills_nav}>
-            <div onClick={onAllSelect}>ALL</div>
-            <div onClick={onWebSelect}>WEB</div>
-            <div onClick={onGraphicsSelect}>GRAPHICS</div>
-            <div onClick={onDBSelect}>DATABASE</div>
-            <div onClick={onAndroidSelect}>ANDROID</div>
+            <motion.div whileHover={{scale:1.2, fontWeight:700}} onClick={onAllSelect}>ALL</motion.div>
+            <motion.div whileHover={{scale:1.2, fontWeight:700}} onClick={onWebSelect}>WEB</motion.div>
+            <motion.div whileHover={{scale:1.2, fontWeight:700}} onClick={onGraphicsSelect}>GRAPHICS</motion.div>
+            <motion.div whileHover={{scale:1.2, fontWeight:700}} onClick={onDBSelect}>DATABASE</motion.div>
+            <motion.div whileHover={{scale:1.2, fontWeight:700}} onClick={onAndroidSelect}>ANDROID</motion.div>
       </div>
       <div className={classes.skills_items} ref={ref}>
       {selected === 'all' && props.items.map((each) => 

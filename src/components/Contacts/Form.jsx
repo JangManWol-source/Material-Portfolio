@@ -5,6 +5,8 @@ import './Form.css'
 import email from '../res/drawable/email_dark.svg'
 import address from '../res/drawable/address_dark.svg'
 import phone from '../res/drawable/phone_dark.svg'
+import emailjs from '@emailjs/browser';
+import { useRef } from 'react'
 
 const Form = () => {
     const data = [{
@@ -23,6 +25,21 @@ const Form = () => {
         details: 'Available anytime'
     },
 ]
+
+const form = useRef()
+const sendEmail = (e) => {
+    e.preventDefault()
+
+    emailjs.sendForm('service_u7r2g48', 'template_j3wsbhm', form.current, 'jORiEf6m2Ak_v7UKh')
+    .then((result) => {
+        console.log(result.text);
+    }, (error) => {
+        console.log(error.text);
+    });
+    e.target.reset()
+};
+
+
     return (
         <div className='contacts' id='contact'>
            <div className='info'>
@@ -40,7 +57,7 @@ const Form = () => {
                     </div>
                 ))}
             </div>
-            <Box component="form" noValidate autoComplete="off" className='box'>
+            <Box onSubmit={sendEmail} component="form" noValidate autoComplete="off" ref={form} className='box'>
             <FormControl >
               <div className="form">
               <div className='form1'>
@@ -49,12 +66,14 @@ const Form = () => {
                         label="Username"
                         multiline
                         maxRows={10}
+                        name='name'
                     // value={value}
                     // onChange={handleChange}
                     />
                     <TextField sx={{ width: '25ch'}}
                         id="outlined-multiline-flexible"
                         label="Email"
+                        name='email'
                         multiline
                         maxRows={10}
                     // value={value}
@@ -67,6 +86,7 @@ const Form = () => {
                         id="outlined-multiline-flexible"
                         label="Message"
                         multiline
+                        name='message'
                         rows={4}
                         maxRows={10}
                     // value={value}
@@ -74,7 +94,7 @@ const Form = () => {
                     />
                     
               <div className='button'>
-              <Button variant='contained' sx={{width:'25ch'}}>Submit</Button>
+              <Button variant='contained' type='submit' sx={{width:'25ch'}}>Submit</Button>
               </div>
                 </div>
               </div>
@@ -87,5 +107,6 @@ const Form = () => {
         </div>
     )
 }
+
 
 export default Form
