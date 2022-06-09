@@ -7,11 +7,12 @@ import code from '../res/drawable/code-solid.svg'
 import award from '../res/drawable/award-solid.svg'
 import graduate from '../res/drawable/graduation-cap-solid.svg'
 import study from '../res/drawable/study.png'
+import { Link } from 'react-scroll'
 const OverView = () => {
   return (
     <div className='overview'>
         <Card className='overview-card'>
-            <div className="title">Quick Overview</div>
+            <div className="title"><Link to='overview' smooth={true} spy={true} offset={-50} duration={1000}>Quick Overview</Link></div>
             <div className="details"><div><img src={graduate} alt="graduate" /></div><div>I am an ICCT Computer Science student.</div></div>
             <div className="details"><div><img src={award} alt="award" /></div><div>At MaNHS, I graduated with honors.</div></div>
             <div className="details"><div><img src={code} alt="code" /></div><div>I am the developer of our thesis android app.</div></div>
