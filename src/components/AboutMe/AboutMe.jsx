@@ -8,6 +8,7 @@ import { Button } from '@mui/material';
 import TypeAnimation from 'react-type-animation';
 import { useInView } from 'react-intersection-observer';
 import { motion } from 'framer-motion';
+import {Link} from 'react-scroll'
 const AboutMe = () => {
     const [ref, inView] = useInView({
         threshold: 0.2
@@ -28,7 +29,9 @@ const AboutMe = () => {
                             wrapper='div' />}
                     </div>
                     <div className={classes.button}>
-                        <Button variant='contained' size='small'>View my projects</Button>
+                        <Button variant='contained' size='small'>
+                            <Link to='project' spy={true} smooth={true} duration={2000}>View my projects</Link>
+                        </Button>
                     </div>
                     <div className={classes.logos}>
                         <div>

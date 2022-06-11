@@ -16,17 +16,17 @@ const Nav = () => {
       <div className={classes.item}>
         <div className={classes.line_wrapper}>
           <motion.div whileHover={{scale:1.3}}>
-            <Link to='home' spy={true} smooth={true} offset={0} duration={1000}>Home</Link>
+            <Link to='home' spy={true} smooth={true} offset={0} duration={2000}>Home</Link>
           </motion.div>
         </div>
         <div className={classes.line_wrapper}>
           <motion.div whileHover={{scale:1.3}}>
-            <Link to='skill' spy={true} smooth={true} offset={0} duration={1000}>Skills</Link>
+            <Link to='skill' spy={true} smooth={true} offset={0} duration={2000}>Skills</Link>
           </motion.div>
         </div>
         <div className={classes.line_wrapper}>
           <motion.div whileHover={{scale:1.3}}>
-            <Link to='contact' spy={true} smooth={true} offset={50} duration={1000}>Contacts</Link>
+            <Link to='contact' spy={true} smooth={true} offset={0} duration={2000}>Contacts</Link>
           </motion.div>
         </div>
       </div>

@@ -5,6 +5,7 @@ import Form from './components/Contacts/Form';
 import Skills from './components/Skills/Skills'
 import Footer from './components/Footer/Footer'
 import OverView from './components/OverView/OverView';
+import Project from './components/Project/Project';
 
 function App() {
   return (
@@ -12,6 +13,7 @@ function App() {
       <AboutMe />
       <OverView />
       <Skills />
+      <Project />
       <Form />
       <Footer />
     </div>
