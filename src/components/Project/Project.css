@@ -1,5 +1,62 @@
 .project{
     display: flex;
     align-items: center;
+    flex-wrap: wrap;
+    width: 100%;
     justify-content: center;
+}
+.project-item img{
+    width: 600px;
+    height: auto;
+}
+.projects{
+    width: 1200px;
+    display: flex;
+    align-items: center;
+}
+.project_details h2{
+    font-weight: 700;
+    display: flex;
+}
+.project_details button{
+    margin-right: 2px;
+}
+.project_details a{
+    text-decoration: none;
+    color: black;
+    font-weight: 700;
+}
+.project-title{
+    padding: 1rem;
+    font-weight: 700;
+    font-size: larger;
+}
+.holder{
+    width: 100%;
+    flex-direction: column;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+}
+
+@media screen and (max-width:600px){
+    .project-item img{
+        width: 100%;
+        height: auto;
+    }
+    .project_details h2{
+        justify-content: center;
+    }
+    .project_details{
+        margin-right: 1rem;
+        margin-left: 1rem;
+    }
+    .project-item{
+        width: 100%;
+    }
+    .projects{
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
 }

@@ -30,7 +30,7 @@ const AboutMe = () => {
                     </div>
                     <div className={classes.button}>
                         <Button variant='contained' size='small'>
-                            <Link to='project' spy={true} smooth={true} duration={2000}>View my projects</Link>
+                            <Link to='holder' spy={true} smooth={true} duration={2000}>View my projects</Link>
                         </Button>
                     </div>
                     <div className={classes.logos}>

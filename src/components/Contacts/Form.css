@@ -23,6 +23,7 @@
     justify-content: center;
     flex-wrap: wrap;
 }
+
 .info{
     line-height: 10px;
     display: flex;
@@ -39,6 +40,7 @@
 }
 .button{
     display: flex;
+    flex-direction: column;
     justify-content: flex-end;
 }
 .img img{
@@ -52,6 +54,7 @@
 
 @media screen and (max-width:600px) {
     .button{
+        align-items: center;
         justify-content: center;
     }
     
