@@ -76,9 +76,6 @@
     display: flex;
     justify-content: flex-end;
 }
-.card-item:hover{
-    color: yellow;
-}
 @media screen and (max-width:600px) {
     .item{
         display: none;

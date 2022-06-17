@@ -61,7 +61,7 @@ const Nav = () => {
         <div className={classes.nav_menu}>
           <MenuRoundedIcon
             onClick={() => {
-              setClick(true);
+              setClick(!click);
             }}
           />
         </div>
@@ -75,8 +75,8 @@ const Nav = () => {
         </div>
       </div>
       {click && (
-        <motion.div onClick={()=>{setClick(false)}} initial={{x:'100ch', opacity:0}} transition={{stiffness:0}} animate={{x:0, opacity:1}} className={classes.nav_drop} style={{ position: "absolute" }}>
-          <Card onClick={()=>{setClick(false)}} className={classes.nav_card}>
+        <motion.div initial={{x:'100ch', opacity:0}} transition={{stiffness:0}} animate={{x:0, opacity:1}} className={classes.nav_drop} style={{ position: "absolute" }}>
+          <Card  className={classes.nav_card}>
           <Link className="card-item"
                 to="home"
                 spy={true}

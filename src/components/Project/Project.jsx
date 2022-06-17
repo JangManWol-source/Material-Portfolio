@@ -19,7 +19,7 @@ export default function Project() {
       img: p1,
       title: "Clone Jollibee Web App named Joellibee",
       description: `This website is a mockup of a Jollibee website. React.js and other react libraries were used to create this. This is just for instructional reasons.`,
-      demo: "https://fanciful-liger-fbdcd4.netlify.app/",
+      demo: "https://extraordinary-lokum-0b06ee.netlify.app/",
       git: "https://github.com/JangManWol-source",
     },
     {
