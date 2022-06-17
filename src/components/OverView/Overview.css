@@ -43,6 +43,9 @@
     font-weight: 600;
     font-size: 15px;
 }
+.title:hover{
+    cursor: pointer;
+}
 .title_a{
     padding: 1rem;
     font-weight: 700;
