@@ -75,24 +75,21 @@ const Nav = () => {
         </div>
       </div>
       {click && (
-        <motion.div
-          initial={{ x: "100ch", opacity: 0 }}
-          transition={{ stiffness: 0, duration:.5 }}
-          animate={{ x: 0, opacity: 1 }}
+        <div
           className={classes.nav_drop}
           style={{ position: "absolute" }}
         >
         <motion.div onClick={()=>{
         setClick(false)
-        }} initial={{opacity:0}} animate={{opacity:.5}} className={classes.back_drop}>
+        }} initial={{opacity:0}} animate={{opacity:.8}} className={classes.back_drop}>
           backdrop
         </motion.div>
-          <div className={classes.nav_card}>
+          <motion.div initial={{x:'100ch'}} transition={{stiffness:0}} animate={{x:0}} className={classes.nav_card}>
             <div className={classes.head}>
               <div>
                 <img src={prof} alt="" />
               </div>
-              <div>
+              <div style={{fontSize:10, paddingLeft:'1rem', paddingRight:'1rem'}}>
                 Joe Cristian Jamis
               </div>
             </div>
@@ -147,8 +144,8 @@ const Nav = () => {
               Projects
             </Link>
             </div>
-          </div>
-        </motion.div>
+          </motion.div>
+        </div>
       )}
     </React.Fragment>
   );

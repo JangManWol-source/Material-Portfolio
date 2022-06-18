@@ -77,12 +77,17 @@
 }
 .nav_card a{
     margin: .5rem;
+    
 }
 .nav_menus_select{
     width: 100%;
     align-items: center;
     display: flex;
+    font-size: small;
     flex-direction: column;
+}
+.nav_menus_select a:hover{
+    color: yellow;
 }
 .head div{
     padding-right: 1rem;
