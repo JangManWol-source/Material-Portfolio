@@ -13,6 +13,7 @@
     position: sticky;
     width: 100%;
     text-align: right;
+    z-index: 2;
     top: 0;
 }
 .back_top a{
