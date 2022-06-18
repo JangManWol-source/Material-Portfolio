@@ -4,6 +4,7 @@
     position: relative;
     align-items: center;
     height: fit-content;
+    background-color: white;
     padding-bottom: 1rem;
     font-size: 10px;
     line-height: 15px;
@@ -22,7 +23,7 @@
 }
 .overview-card{
     position: relative;
-    top: -35px;
+    top: -60px;
     margin-bottom: 2rem;
     padding: 1rem;
     max-width: 90rem;
@@ -40,7 +41,6 @@
 .title{
     padding-bottom: 1.5rem;
     text-align: center;
-    font-weight: 600;
     font-size: 15px;
 }
 .title:hover{
@@ -48,7 +48,6 @@
 }
 .title_a{
     padding: 1rem;
-    font-weight: 700;
     font-size: medium;
 
 }
@@ -56,5 +55,7 @@
     .overview{
         padding-bottom: 1rem;
     }
-    
+    .overview-card{
+        top: -70px;
+    }   
 }

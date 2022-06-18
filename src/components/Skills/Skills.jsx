@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useRef } from 'react'
 import classes from './Skills.module.css'
 import SkillsItem from './SkillsItem'
 import html from '../res/drawable/html.png'
@@ -14,19 +14,44 @@ import fr from '../res/drawable/firebase.png'
 import kt from '../res/drawable/kotlin.png'
 import { motion } from "framer-motion"
 import java from '../res/drawable/java.png'
+import express from '../res/drawable/express.png'
+import node from '../res/drawable/node.png'
+import mongo from '../res/drawable/mongo.png'
+import { Link } from 'react-scroll'
 const Skills = (props) => {
   
     const web = ([{
         id: Math.random().toString(),
         title: 'React.JS',
-        value: 75,
+        value: 85,
         img: react,
         type: 'web'
     },
     {
         id: Math.random().toString(),
+        title: 'MongoDB',
+        value: 80,
+        img: mongo,
+        type: 'database'
+    },
+    {
+        id: Math.random().toString(),
+        title: 'Express.JS',
+        value: 80,
+        img: express,
+        type: 'web'
+    },
+    {
+        id: Math.random().toString(),
+        title: 'Node.JS',
+        value: 80,
+        img: node,
+        type: 'web'
+    },
+    {
+        id: Math.random().toString(),
         title: 'JavaScript',
-        value: 75,
+        value: 85,
         img: js,
         type: 'web'
     },
@@ -40,7 +65,7 @@ const Skills = (props) => {
     {
         id: Math.random().toString(),
         title: 'CSS',
-        value: 75,
+        value: 85,
         img: css,
         type: 'web'
     }, {
@@ -99,10 +124,16 @@ const Skills = (props) => {
         type: 'graphics'
     },])
 
+    
+  const ref = useRef()
+
     return (
-        <React.Fragment>
-            
-             <motion.div id='skill' className={classes.skills}>
+        <React.Fragment> 
+            {ref && <div style={{color:'white'}} className={classes.back_top}><Link to='home' spy={true}
+              smooth={true}
+              offset={0}
+              duration={2000}>BACK TO TOP</Link></div>}
+             <motion.div ref={ref} id='skill' className={classes.skills}>
                 <SkillsItem items={web} />
             </motion.div>
         </React.Fragment>

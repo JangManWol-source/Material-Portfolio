@@ -12,9 +12,9 @@ import { motion } from 'framer-motion'
 const OverView = () => {
   return (
     <motion.div animate={{y:0, opacity:1}} transition={{duration:1.5}} initial={{opacity:0, y:100}} className='overview'>
-        <div>
+        <Link to={'overview-card'} smooth={true} spy={true} offset={-62} duration={1000}>
         <Card  className='overview-card'>
-            <div className="title"><Link to='overview' smooth={true} spy={true} offset={-32} duration={1000}>Quick Overview</Link></div>
+            <div className="title"><div>Quick Overview</div></div>
             <div className="details"><div><img src={graduate} alt="graduate" /></div><div>I am an ICCT Computer Science student.</div></div>
             <div className="details"><div><img src={award} alt="award" /></div><div>At MaNHS, I graduated with honors.</div></div>
             <div className="details"><div><img src={code} alt="code" /></div><div>I am the developer of our thesis android app.</div></div>
@@ -41,7 +41,7 @@ const OverView = () => {
             <div className='study'><img src={study} alt="" /></div>
            
         </Card>
-        </div>
+        </Link>
     </motion.div>
   )
 }

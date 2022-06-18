@@ -1,0 +1,13 @@
+.App{
+    display: flex;
+    justify-content: center;
+}
+.center{
+    width: 1200px;
+}
+@media screen and (max-width:1200px) {
+    .center{
+        width: 100%;
+    }
+    
+}

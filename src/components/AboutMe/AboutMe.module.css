@@ -4,7 +4,8 @@
     /* background-image: url('../res//drawable/bg.png'); */
     height: 100vh;
     width: 100%;
-    background-size: cover;
+    background-size:1200px;
+    background-repeat: no-repeat;
 }
 .nav_content{
     height: 80vh;

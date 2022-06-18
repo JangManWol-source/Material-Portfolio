@@ -4,9 +4,9 @@ import Logo from "../Logo/Logo.jsx";
 import Button from "@mui/material/Button";
 import { Link } from "react-scroll";
 import git from "../res/drawable/git_dark.svg";
+import prof from "../res/drawable/2x2.jpg";
 import MenuRoundedIcon from "@mui/icons-material/MenuRounded";
 import { motion } from "framer-motion";
-import { Card } from "@mui/material";
 const Nav = () => {
   const [click, setClick] = useState(false);
   return (
@@ -75,50 +75,79 @@ const Nav = () => {
         </div>
       </div>
       {click && (
-        <motion.div initial={{x:'100ch', opacity:0}} transition={{stiffness:0}} animate={{x:0, opacity:1}} className={classes.nav_drop} style={{ position: "absolute" }}>
-          <Card  className={classes.nav_card}>
-          <Link className="card-item"
-                to="home"
-                spy={true}
-                smooth={true}
-                offset={0}
-                duration={2000}
-              >
-                Home
-              </Link>
-              <Link
+        <motion.div
+          initial={{ x: "100ch", opacity: 0 }}
+          transition={{ stiffness: 0, duration:.5 }}
+          animate={{ x: 0, opacity: 1 }}
+          className={classes.nav_drop}
+          style={{ position: "absolute" }}
+        >
+        <motion.div onClick={()=>{
+        setClick(false)
+        }} initial={{opacity:0}} animate={{opacity:.5}} className={classes.back_drop}>
+          backdrop
+        </motion.div>
+          <div className={classes.nav_card}>
+            <div className={classes.head}>
+              <div>
+                <img src={prof} alt="" />
+              </div>
+              <div>
+                Joe Cristian Jamis
+              </div>
+            </div>
+            <div className={classes.nav_menus_select}>
+            <Link
+            onClick={()=>{setClick(false)}}
               className="card-item"
-                to="skill"
-                spy={true}
-                smooth={true}
-                offset={0}
-                duration={2000}
-              >
-                Skills
-              </Link>
+              to="home"
+              spy={true}
+              smooth={true}
+              offset={0}
+              duration={2000}
+            >
+              Home
+            </Link>
+            <Link
+            
+            onClick={()=>{setClick(false)}}
+              className="card-item"
+              to="skill"
+              spy={true}
+              smooth={true}
+              offset={20}
+              duration={2000}
+            >
+              Skills
+            </Link>
 
-              <Link className="card-item"
-                to="contact"
-                spy={true}
-                smooth={true}
-                offset={0}
-                duration={2000}
-              >
-                Contacts
-              </Link>
+            <Link
+            
+            onClick={()=>{setClick(false)}}
+              className="card-item"
+              to="contact"
+              spy={true}
+              smooth={true}
+              offset={-40}
+              duration={2000}
+            >
+              Contacts
+            </Link>
 
-              <Link className="card-item"
-                to="holder"
-                spy={true}
-                smooth={true}
-                offset={0}
-                duration={2000}
-              >
-                Projects
-              </Link>
-
-              
-          </Card>
+            <Link
+            
+            onClick={()=>{setClick(false)}}
+              className="card-item"
+              to="holder"
+              spy={true}
+              smooth={true}
+              offset={-40}
+              duration={2000}
+            >
+              Projects
+            </Link>
+            </div>
+          </div>
         </motion.div>
       )}
     </React.Fragment>

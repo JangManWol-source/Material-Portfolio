@@ -1,6 +1,6 @@
 .skills{
     width: 100% auto;
-    height: 100%;
+    height: fit-content;
     display: flex;
     flex-direction: column;
     background-color: #171717;
@@ -8,12 +8,32 @@
     align-items: center;
     padding: 5rem;
 }
+.back_top{
+    position: -webkit-sticky;
+    position: sticky;
+    width: 100%;
+    text-align: right;
+    top: 0;
+}
+.back_top a{
+    background-color: #171717;
+    padding: 1rem;
+    border-radius: 1rem;
+}
 
 @media screen and (max-width: 600px) {
     .skills{
         width: 100% auto;
         height: fit-content;
         overflow: hidden;
+    }
+    .back_top a{
+        font-size: 10px;
+        padding: .5rem;
+        border-radius: 0;
+    }
+    .back_top{
+        top: 50px;z-index: 2;
     }
     
 }
