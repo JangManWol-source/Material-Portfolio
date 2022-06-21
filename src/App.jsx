@@ -5,11 +5,10 @@ import Skills from "./components/Skills/Skills";
 import Footer from "./components/Footer/Footer";
 import OverView from "./components/OverView/OverView";
 import Project from "./components/Project/Project";
-
 function App() {
   return (
     <div className="App">
-      <div className='center'>
+      <div className="center">
         <AboutMe />
         <OverView />
         <Skills />
